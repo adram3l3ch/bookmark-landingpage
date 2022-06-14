@@ -85,7 +85,7 @@ p {
 }
 
 .btn.secondary {
-	--btn-bg: rgb(233, 233, 233);
+	--btn-bg: rgb(241, 239, 239);
 	color: var(--primary-color-dark);
 }
 

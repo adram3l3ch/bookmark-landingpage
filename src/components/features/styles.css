@@ -16,12 +16,11 @@
 .features__title,
 .features__desc {
 	text-align: center;
-	margin-bottom: 1rem;
 }
 
 .features__desc {
 	max-width: 500px;
-	margin-inline: auto;
+	margin: 1rem auto;
 }
 .features__list {
 	width: max-content;

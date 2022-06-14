@@ -1,0 +1,54 @@
+.extension {
+	display: grid;
+	justify-items: center;
+}
+
+.extension__title,
+.extension__desc,
+.extension__card__title,
+.extension__card__version {
+	text-align: center;
+	margin-block: 0.5rem;
+}
+
+.extension__desc {
+	max-width: 550px;
+	margin: 1rem auto;
+}
+
+.extension__cards {
+	margin-block: 2rem;
+	display: flex;
+	gap: 2rem;
+}
+
+.extension__card {
+	display: grid;
+	justify-items: center;
+	width: max-content;
+	gap: 1rem;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 10px 20px rgba(55, 103, 192, 0.2);
+	position: relative;
+	transform: translateY(var(--offset-top, 0));
+}
+
+.extension__card__version {
+	margin-bottom: 2rem;
+	font-size: 0.85rem;
+}
+
+.extension__card .btn {
+	margin-top: 1.5rem;
+	padding-inline: 2rem;
+}
+
+.extension__title .extension__image {
+	width: max-content;
+}
+
+.dots {
+	position: absolute;
+	left: 0;
+}
