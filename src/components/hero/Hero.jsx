@@ -1,5 +1,5 @@
 import HERO from "../../images/illustration-hero.svg";
-import "./style.css";
+import "./styles.css";
 
 const Hero = () => {
 	return (
