@@ -10,7 +10,10 @@
 
 :root {
 	--primary-color: hsl(231, 69%, 60%);
+	--primary-color-light: hsl(229, 8%, 60%);
+	--primary-color-dark: hsl(229, 31%, 21%);
 	--secondary-color: hsl(0, 94%, 66%);
+	font-size: 18px;
 }
 
 body {
@@ -21,23 +24,60 @@ body {
 
 ul {
 	list-style: none;
+	font-size: 0.75rem;
 }
 
 a {
 	text-decoration: none;
+	color: var(--primary-color-dark);
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+h1 {
+	font-weight: 500;
+	font-size: 2.5rem;
+	color: var(--primary-color-dark);
+}
+
+p {
+	line-height: 1.5em;
+	color: var(--primary-color-light);
 }
 
 .btn {
-	padding: 0.75rem 2rem;
+	padding: 0.9rem 1.4rem;
 	border-radius: 0.25rem;
 	font-family: inherit;
-	font-size: 1rem;
+	font-size: 0.75rem;
 	border: none;
 	cursor: pointer;
+	letter-spacing: 0.08em;
+	font-weight: 500;
+}
+
+.btn.primary {
+	background-color: var(--primary-color);
+	color: white;
 }
 
 .container {
 	max-width: 1200px;
 	padding: 2rem;
 	margin: 0 auto;
+}
+
+.round-bg {
+	--height: clamp(15rem, 65%, 20rem);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	width: clamp(20rem, 40%, 30rem);
+	height: var(--height);
+	border-radius: 100rem 0 0 100rem;
+	background-color: var(--primary-color);
 }

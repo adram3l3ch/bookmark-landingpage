@@ -13,4 +13,5 @@
 .btn.login {
 	background-color: var(--secondary-color);
 	color: white;
+	padding: 0.75rem 2rem;
 }
