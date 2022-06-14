@@ -1,0 +1,66 @@
+.contact {
+	background-color: var(--primary-color);
+	padding-block: 2rem;
+}
+
+.contact .container {
+	display: grid;
+	justify-items: center;
+	gap: 2rem;
+}
+
+.contact__subtitle,
+.contact__title {
+	color: white;
+	text-align: center;
+}
+
+.contact__subtitle {
+	letter-spacing: 0.5em;
+	font-weight: 400;
+}
+
+.contact__form {
+	display: flex;
+	gap: 1rem;
+}
+
+.contact__form input {
+	height: 100%;
+	border: none;
+	outline: none;
+	background-color: white;
+	padding-inline: 1rem;
+	border-radius: 0.25rem;
+	width: 300px;
+	font-size: 0.8rem;
+	font-family: inherit;
+	border: 2px solid white;
+}
+
+.email-input {
+	position: relative;
+}
+
+.email-input .error {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	transform: translateY(calc(100% - 2px));
+	border-radius: 0 0 0.25rem 0.25rem;
+	font-size: 0.6rem;
+	letter-spacing: 0.08em;
+	padding: 0.25rem 0.5rem;
+	font-style: italic;
+	background-color: var(--secondary-color);
+	color: white;
+	display: none;
+}
+
+input:invalid:focus + .error {
+	display: block;
+}
+
+.contact__form input:invalid:focus {
+	border: 2px solid var(--secondary-color);
+}

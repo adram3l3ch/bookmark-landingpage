@@ -1,3 +1,4 @@
+import Contact from "./components/contact/Contact";
 import Extension from "./components/extension/Extension";
 import FAQ from "./components/faq/FAQ";
 import Features from "./components/features/Features";
@@ -12,6 +13,7 @@ function App() {
 			<Features />
 			<Extension />
 			<FAQ />
+			<Contact />
 		</div>
 	);
 }
