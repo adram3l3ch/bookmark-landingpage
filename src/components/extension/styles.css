@@ -17,7 +17,7 @@
 }
 
 .extension__cards {
-	margin-block: 2rem;
+	margin-block: 2rem 6rem;
 	display: flex;
 	gap: 2rem;
 }

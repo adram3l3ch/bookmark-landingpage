@@ -62,10 +62,17 @@ p {
 	font-size: 0.75rem;
 	border: none;
 	cursor: pointer;
-	letter-spacing: 0.08em;
+	letter-spacing: 0.05em;
 	font-weight: 500;
 	background-color: var(--btn-bg, var(--primary-color));
+	border: 2px solid var(--btn-bg, var(--primary-color));
 	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+	background-color: white;
+	color: var(--btn-bg, var(--primary-color)) !important;
 }
 
 .btn::after {
@@ -85,8 +92,12 @@ p {
 }
 
 .btn.secondary {
-	--btn-bg: rgb(241, 239, 239);
+	--btn-bg: rgb(241, 239, 245);
 	color: var(--primary-color-dark);
+}
+
+.btn.secondary:hover {
+	--btn-bg: var(--primary-color-dark);
 }
 
 .btn.secondary::after {
