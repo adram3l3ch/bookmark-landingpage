@@ -1,0 +1,16 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.navlinks {
+	display: flex;
+	gap: inherit;
+	margin-left: auto;
+}
+
+.btn.login {
+	background-color: var(--secondary-color);
+	color: white;
+}
