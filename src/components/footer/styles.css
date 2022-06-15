@@ -1,0 +1,30 @@
+.footer {
+	background-color: var(--primary-color-dark);
+}
+
+.footer .navlinks {
+	margin-left: 0;
+}
+
+.footer a {
+	color: white;
+}
+
+.sociallinks {
+	display: flex;
+	margin-left: auto;
+	gap: 2rem;
+	align-items: baseline;
+}
+
+.sociallinks > * {
+	cursor: pointer;
+}
+
+.navbar svg path {
+	fill: white;
+}
+
+.navbar svg:hover path {
+	fill: var(--secondary-color);
+}

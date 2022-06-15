@@ -3,7 +3,7 @@ import "./styles.css";
 
 const Hero = () => {
 	return (
-		<div className="hero">
+		<section className="hero">
 			<div className="container">
 				<div className="round-bg" />
 				<div className="hero__content">
@@ -22,7 +22,7 @@ const Hero = () => {
 					<img src={HERO} alt="hero-image" aria-hidden />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -35,8 +35,10 @@ const Features = () => {
 		setInset({ left, width });
 	}, [activeFeature]);
 
+	const style = { "--left": `${inset.left}px`, "--width": `${inset.width}px` };
+
 	return (
-		<div className="features">
+		<section className="features">
 			<div className="container">
 				<div className="round-bg" />
 				<h2 className="features__title">Features</h2>
@@ -45,10 +47,7 @@ const Features = () => {
 					websites. Your bookmarks sync between your devices so you can access
 					them on the go.
 				</p>
-				<div
-					className="features__selector"
-					style={{ "--left": `${inset.left}px`, "--width": `${inset.width}px` }}
-				>
+				<div className="features__selector" style={style}>
 					<ul className="features__list" ref={listRef}>
 						{["Simple Bookmarking", "Speedy Searching", "Easy Sharing"].map(
 							(feature, index) => (
@@ -64,7 +63,7 @@ const Features = () => {
 					<Feature {...features[activeFeature]} />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

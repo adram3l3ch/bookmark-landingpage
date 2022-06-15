@@ -1,13 +1,17 @@
 .navbar {
 	display: flex;
 	align-items: center;
-	gap: 2rem;
+	gap: 3rem;
 }
 
 .navlinks {
 	display: flex;
 	gap: inherit;
 	margin-left: auto;
+}
+
+.navlink:hover a {
+	color: var(--secondary-color);
 }
 
 .btn.login {

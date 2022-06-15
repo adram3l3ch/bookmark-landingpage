@@ -1,6 +1,7 @@
 .faq {
 	display: grid;
 	justify-items: center;
+	margin-block: 3rem 6rem;
 }
 
 .faq__desc {
@@ -15,9 +16,9 @@
 }
 
 .singleFaq {
-	width: min(100%, 35rem);
+	max-width: 30rem;
 	margin-inline: auto;
-	padding-block: 1.5rem;
+	padding-block: 1.25rem;
 	border-bottom: 1px solid rgb(212, 212, 212);
 }
 
@@ -30,6 +31,7 @@
 
 .singleFaq__answer {
 	margin-block: 2rem 1rem;
+	line-height: 2em;
 }
 
 .singleFaq__question {

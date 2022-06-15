@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 
 const Feature = ({ img, title, desc }) => {
 	const [mounting, setMounting] = useState(false);
 	const divRef = useRef();
-	useEffect(() => {
+	useLayoutEffect(() => {
 		setMounting(true);
 		divRef.current.addEventListener("animationend", () => setMounting(false));
 
@@ -11,9 +11,10 @@ const Feature = ({ img, title, desc }) => {
 			divRef.current.removeEventListener("animationend", () =>
 				setMounting(false)
 			);
-	}, [title]);
+	}, [img]);
+
 	return (
-		<div className={mounting ? "feature mounting" : "feature"}>
+		<article className={mounting ? "feature mounting" : "feature"}>
 			<div className="feature__image" ref={divRef}>
 				<img src={img} alt="feature-image" aria-hidden />
 			</div>
@@ -22,7 +23,7 @@ const Feature = ({ img, title, desc }) => {
 				<p className="feature__desc">{desc}</p>
 				<button className="btn primary">More Info</button>
 			</div>
-		</div>
+		</article>
 	);
 };
 

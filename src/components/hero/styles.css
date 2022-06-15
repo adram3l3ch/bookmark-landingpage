@@ -1,6 +1,7 @@
 .hero {
 	position: relative;
 	padding-block: 2rem;
+	overflow: hidden;
 }
 
 .hero .container {

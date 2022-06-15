@@ -1,6 +1,7 @@
 .extension {
 	display: grid;
 	justify-items: center;
+	margin-block: 5rem;
 }
 
 .extension__title,
@@ -17,19 +18,20 @@
 }
 
 .extension__cards {
-	margin-block: 2rem 6rem;
+	margin-block: 2rem;
 	display: flex;
 	gap: 2rem;
 }
 
 .extension__card {
 	display: grid;
+	flex-shrink: 1;
 	justify-items: center;
-	width: max-content;
+	/* width: max-content; */
 	gap: 1rem;
 	padding: 1.5rem;
 	border-radius: 0.5rem;
-	box-shadow: 0 10px 20px rgba(55, 103, 192, 0.2);
+	box-shadow: 0 10px 20px rgba(55, 103, 192, 0.15);
 	position: relative;
 	transform: translateY(var(--offset-top, 0));
 }

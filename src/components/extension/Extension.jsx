@@ -25,8 +25,8 @@ const extensions = [
 const Extension = () => {
 	return (
 		<div className="container">
-			<div className="extension">
-				<h2 className="extension__title">Download Extension</h2>
+			<section className="extension">
+				<h2 className="extension__title">Download the Extension</h2>
 				<p className="extension__desc">
 					We've got more browsers in the pipeline. Please do let us know if
 					you've got a favourite you'd like us to prioritize.
@@ -36,7 +36,7 @@ const Extension = () => {
 						<ExtensionCard {...extension} index={i} />
 					))}
 				</div>
-			</div>
+			</section>
 		</div>
 	);
 };

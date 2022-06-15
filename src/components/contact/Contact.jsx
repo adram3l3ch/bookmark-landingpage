@@ -2,7 +2,7 @@ import "./styles.css";
 
 const Contact = () => {
 	return (
-		<div className="contact">
+		<section className="contact">
 			<div className="container">
 				<h6 className="contact__subtitle">35,000+ ALREADY JOINED</h6>
 				<h2 className="contact__title">
@@ -20,7 +20,7 @@ const Contact = () => {
 					<button className="btn login">Contact Us</button>
 				</form>
 			</div>
-		</div>
+		</section>
 	);
 };
 
