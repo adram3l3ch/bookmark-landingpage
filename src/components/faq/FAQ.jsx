@@ -38,7 +38,7 @@ const FAQ = () => {
 						<SingleFAQ {...faq} key={index} />
 					))}
 				</div>
-				<div className="btn btn primary">More Info</div>
+				<button className="btn btn primary">More Info</button>
 			</section>
 		</div>
 	);

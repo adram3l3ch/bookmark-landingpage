@@ -56,7 +56,7 @@
 
 @media (min-width: 1000px) {
 	.extension {
-		margin-block: 4rem;
+		margin-block: 1rem;
 	}
 	.extension__card {
 		transform: translateY(var(--offset-top, 0));

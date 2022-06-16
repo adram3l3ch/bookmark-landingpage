@@ -17,7 +17,7 @@ const Navbar = () => {
 		<div className="container">
 			<nav className={isOpen ? "navbar open" : "navbar"}>
 				<div className="navbar-brand">
-					<a href="/">
+					<a href="/" aria-label="home">
 						<LOGO />
 					</a>
 				</div>

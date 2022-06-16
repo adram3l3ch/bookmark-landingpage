@@ -4,7 +4,7 @@ const Contact = () => {
 	return (
 		<section className="contact">
 			<div className="container">
-				<h6 className="contact__subtitle">35,000+ ALREADY JOINED</h6>
+				<h3 className="contact__subtitle">35,000+ ALREADY JOINED</h3>
 				<h2 className="contact__title">
 					Stay up-to-date with what <br /> we're doing
 				</h2>

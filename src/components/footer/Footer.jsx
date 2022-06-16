@@ -7,9 +7,9 @@ const Footer = () => {
 	return (
 		<footer className="footer">
 			<div className="container">
-				<nav className="navbar">
+				<div className="navbar">
 					<div className="navbar-brand">
-						<a href="/">
+						<a href="/" aria-label="home">
 							<LOGO />
 						</a>
 					</div>
@@ -28,7 +28,7 @@ const Footer = () => {
 						<Fb />
 						<Twitter />
 					</div>
-				</nav>
+				</div>
 			</div>
 		</footer>
 	);
