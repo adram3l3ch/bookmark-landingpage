@@ -21,10 +21,21 @@
 	cursor: pointer;
 }
 
-.navbar svg path {
+footer .navbar svg path {
 	fill: white;
 }
 
 .navbar svg:hover path {
 	fill: var(--secondary-color);
+}
+
+@media (max-width: 800px) {
+	.footer .navbar,
+	.footer .navbar .navlinks {
+		flex-direction: column;
+	}
+
+	.sociallinks {
+		margin-left: 0;
+	}
 }

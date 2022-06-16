@@ -4,6 +4,11 @@
 	gap: 3rem;
 }
 
+.hamburger {
+	display: none;
+	margin-left: auto;
+}
+
 .navlinks {
 	display: flex;
 	gap: inherit;
@@ -22,7 +27,52 @@
 }
 
 @media (max-width: 800px) {
-	.navlinks {
-		display: none;
+	.navbar-brand {
+		z-index: 100;
+	}
+	header .navbar.open .navbar-brand svg path {
+		fill: white;
+	}
+	.hamburger {
+		display: block;
+		z-index: 99;
+		transform: scale(1.2);
+	}
+
+	header .navbar .navlinks {
+		position: fixed;
+		inset: 0;
+		background-color: hsla(229, 31%, 21%, 0.87);
+		z-index: 99;
+		flex-direction: column;
+		padding: 2rem;
+		padding-top: 10rem;
+		backdrop-filter: blur(6px);
+		opacity: 0;
+		pointer-events: none;
+	}
+	header .navbar.open .navlinks {
+		opacity: 1;
+		pointer-events: auto;
+		transition: all 0.2s ease-in-out;
+	}
+
+	header .navbar.open .navlink a {
+		color: white;
+		font-size: 1.2rem;
+	}
+	header .navbar.open .navlink:last-of-type {
+		align-self: stretch;
+	}
+	header .navbar.open .btn.login {
+		width: 100%;
+		--btn-bg: transparent;
+		font-size: 1rem;
+		border: 2px solid white;
+	}
+
+	header .navbar.open .btn.login:hover {
+		background-color: transparent;
+		color: white !important;
 	}
 }

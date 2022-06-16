@@ -48,6 +48,7 @@
 
 .singleFaq__question img {
 	transition: transform 0.3s ease-in-out;
+	width: 15px;
 }
 
 .singleFaq[open] .singleFaq__question img {

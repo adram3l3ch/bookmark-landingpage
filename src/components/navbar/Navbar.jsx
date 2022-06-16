@@ -1,13 +1,24 @@
-import LOGO from "../../images/logo-bookmark.svg";
+import { ReactComponent as LOGO } from "../../images/logo-bookmark.svg";
+import { ReactComponent as Hamburger } from "../../images/icon-hamburger.svg";
+import { ReactComponent as Close } from "../../images/icon-close.svg";
 import "./styles.css";
+import { useLayoutEffect, useState } from "react";
 
 const Navbar = () => {
+	const [isOpen, setIsOpen] = useState(false);
+	useLayoutEffect(() => {
+		if (isOpen) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "auto";
+		}
+	}, [isOpen]);
 	return (
 		<div className="container">
-			<nav className="navbar">
+			<nav className={isOpen ? "navbar open" : "navbar"}>
 				<div className="navbar-brand">
 					<a href="/">
-						<img src={LOGO} alt="bookmark-logo" />
+						<LOGO />
 					</a>
 				</div>
 				<ul className="navlinks">
@@ -24,6 +35,13 @@ const Navbar = () => {
 						<button className="btn login">LOGIN</button>
 					</li>
 				</ul>
+				<button className="hamburger">
+					{isOpen ? (
+						<Close onClick={() => setIsOpen(false)} />
+					) : (
+						<Hamburger onClick={() => setIsOpen(true)} />
+					)}
+				</button>
 			</nav>
 		</div>
 	);

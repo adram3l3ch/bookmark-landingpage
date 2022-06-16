@@ -33,7 +33,7 @@ a {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
 	display: block;
 }
 
@@ -59,13 +59,17 @@ p {
 	color: var(--primary-color-light);
 }
 
-.btn {
-	padding: 0.9rem 1.4rem;
-	border-radius: 0.25rem;
+button {
 	font-family: inherit;
 	font-size: 0.75rem;
 	border: none;
 	cursor: pointer;
+	background: none;
+}
+
+.btn {
+	padding: 0.9rem 1.4rem;
+	border-radius: 0.25rem;
 	letter-spacing: 0.05em;
 	font-weight: 500;
 	background-color: var(--btn-bg, var(--primary-color));
@@ -116,19 +120,28 @@ p {
 }
 
 .round-bg {
-	--height: clamp(15rem, 65%, 20rem);
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	right: -5rem;
 	z-index: -1;
-	width: clamp(20rem, 40%, 30rem);
-	aspect-ratio: 4/3;
+	width: 34rem;
+	aspect-ratio: 7/4;
 	border-radius: 100rem 0 0 100rem;
 	background-color: var(--primary-color);
 }
 
 @media (max-width: 800px) {
 	:root {
-		font-size: 15px;
+		font-size: 14px;
+	}
+	ul {
+		list-style: none;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 800px) {
+	.container {
+		padding: 2rem 1rem;
 	}
 }
