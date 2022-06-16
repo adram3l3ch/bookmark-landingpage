@@ -132,7 +132,7 @@ button {
 
 @media (max-width: 800px) {
 	:root {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	ul {
 		list-style: none;
