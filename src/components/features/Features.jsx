@@ -59,6 +59,7 @@ const Features = () => {
 								<li
 									className="features__item"
 									onClick={() => setActiveFeature(index)}
+									key={index}
 								>
 									{feature}
 								</li>
