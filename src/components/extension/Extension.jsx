@@ -33,7 +33,7 @@ const Extension = () => {
 				</p>
 				<div className="extension__cards">
 					{extensions.map((extension, i) => (
-						<ExtensionCard {...extension} index={i} />
+						<ExtensionCard {...extension} index={i} key={extension.title} />
 					))}
 				</div>
 			</section>

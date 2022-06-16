@@ -1,11 +1,9 @@
-import { useId } from "react";
 import dots from "../../images/bg-dots.svg";
 
 const ExtensionCard = ({ image, title, version, index }) => {
-	const key = useId();
 	const style = { "--offset-top": `${index * 40}px` };
 	return (
-		<div className="extension__card" style={style} key={key}>
+		<div className="extension__card" style={style}>
 			<div className="extension__image">
 				<img src={image} alt="extension" />
 			</div>

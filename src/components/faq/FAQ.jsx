@@ -34,8 +34,8 @@ const FAQ = () => {
 					answered please feel free to email us.
 				</p>
 				<div className="faqs">
-					{faqs.map(faq => (
-						<SingleFAQ {...faq} />
+					{faqs.map((faq, index) => (
+						<SingleFAQ {...faq} key={index} />
 					))}
 				</div>
 				<div className="btn btn primary">More Info</div>
