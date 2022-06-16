@@ -25,17 +25,22 @@ const features = [
 
 const Features = () => {
 	const [activeFeature, setActiveFeature] = useState(0);
-	const [inset, setInset] = useState({ left: 0, width: 0 });
+	const [inset, setInset] = useState({ left: 0, width: 0, top: 0 });
 	const listRef = useRef();
 
 	useEffect(() => {
 		const item = listRef.current.childNodes[activeFeature];
 		const left = item.offsetLeft;
 		const width = item.offsetWidth;
-		setInset({ left, width });
+		const top = item.offsetTop + item.getBoundingClientRect().height;
+		setInset({ left, width, top });
 	}, [activeFeature]);
 
-	const style = { "--left": `${inset.left}px`, "--width": `${inset.width}px` };
+	const style = {
+		"--left": `${inset.left}px`,
+		"--width": `${inset.width}px`,
+		"--top": `${inset.top}px`,
+	};
 
 	return (
 		<section className="features">

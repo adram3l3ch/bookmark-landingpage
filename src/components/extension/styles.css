@@ -1,7 +1,6 @@
 .extension {
 	display: grid;
 	justify-items: center;
-	margin-block: 5rem;
 }
 
 .extension__title,
@@ -20,6 +19,8 @@
 .extension__cards {
 	margin-block: 2rem;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 2rem;
 }
 
@@ -27,13 +28,11 @@
 	display: grid;
 	flex-shrink: 1;
 	justify-items: center;
-	/* width: max-content; */
 	gap: 1rem;
 	padding: 1.5rem;
 	border-radius: 0.5rem;
 	box-shadow: 0 10px 20px rgba(55, 103, 192, 0.15);
 	position: relative;
-	transform: translateY(var(--offset-top, 0));
 }
 
 .extension__card__version {
@@ -53,4 +52,16 @@
 .dots {
 	position: absolute;
 	left: 0;
+}
+
+@media (min-width: 1000px) {
+	.extension {
+		margin-block: 4rem;
+	}
+	.extension__card {
+		transform: translateY(var(--offset-top, 0));
+	}
+	.extension__cards {
+		flex-wrap: nowrap;
+	}
 }

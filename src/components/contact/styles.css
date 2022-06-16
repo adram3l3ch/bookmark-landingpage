@@ -30,7 +30,7 @@
 	border: none;
 	outline: none;
 	background-color: white;
-	padding-inline: 1rem;
+	padding: 0.8rem 1rem;
 	border-radius: 0.25rem;
 	width: 300px;
 	font-size: 0.8rem;
@@ -63,4 +63,10 @@ input:invalid:focus + .error {
 
 .contact__form input:invalid:focus {
 	border: 2px solid var(--secondary-color);
+}
+
+@media (max-width: 800px) {
+	.contact__form {
+		flex-direction: column;
+	}
 }

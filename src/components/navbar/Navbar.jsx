@@ -20,8 +20,10 @@ const Navbar = () => {
 					<li className="navlink">
 						<a href="#">CONTACT</a>
 					</li>
+					<li className="navlink">
+						<button className="btn login">LOGIN</button>
+					</li>
 				</ul>
-				<button className="btn login">LOGIN</button>
 			</nav>
 		</div>
 	);

@@ -72,6 +72,7 @@ p {
 	border: 2px solid var(--btn-bg, var(--primary-color));
 	position: relative;
 	transition: all 0.2s ease-in-out;
+	line-height: 1.5em;
 }
 
 .btn:hover {
@@ -121,7 +122,13 @@ p {
 	right: 0;
 	z-index: -1;
 	width: clamp(20rem, 40%, 30rem);
-	height: var(--height);
+	aspect-ratio: 4/3;
 	border-radius: 100rem 0 0 100rem;
 	background-color: var(--primary-color);
+}
+
+@media (max-width: 800px) {
+	:root {
+		font-size: 15px;
+	}
 }

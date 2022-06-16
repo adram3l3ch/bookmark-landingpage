@@ -8,6 +8,7 @@
 	display: flex;
 	gap: inherit;
 	margin-left: auto;
+	align-items: center;
 }
 
 .navlink:hover a {
@@ -18,4 +19,10 @@
 	--btn-bg: var(--secondary-color);
 	color: white;
 	padding: 0.75rem 2rem;
+}
+
+@media (max-width: 800px) {
+	.navlinks {
+		display: none;
+	}
 }

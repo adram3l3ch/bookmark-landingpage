@@ -25,3 +25,23 @@
 	display: flex;
 	gap: 1rem;
 }
+
+@media (max-width: 800px) {
+	.hero .container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.hero__image {
+		transform-origin: center;
+		margin-bottom: 2rem;
+	}
+	.hero__content {
+		justify-items: center;
+		text-align: center;
+		grid-row: 2/3;
+	}
+	.hero .round-bg {
+		bottom: 50%;
+		width: 80%;
+	}
+}

@@ -10,6 +10,10 @@
 	margin-block: 1rem;
 }
 
+.faq__title {
+	text-align: center;
+}
+
 .faqs {
 	width: 100%;
 	margin-block: 2rem 3rem;
