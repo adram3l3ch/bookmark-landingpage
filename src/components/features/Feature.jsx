@@ -5,12 +5,11 @@ const Feature = ({ img, title, desc }) => {
 	const divRef = useRef();
 	useLayoutEffect(() => {
 		setMounting(true);
-		divRef.current.addEventListener("animationend", () => setMounting(false));
+		const div = divRef.current;
+		div.addEventListener("animationend", () => setMounting(false));
 
 		return () =>
-			divRef.current.removeEventListener("animationend", () =>
-				setMounting(false)
-			);
+			div.removeEventListener("animationend", () => setMounting(false));
 	}, [img]);
 
 	return (
