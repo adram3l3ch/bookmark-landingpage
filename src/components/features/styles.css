@@ -58,7 +58,7 @@
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	gap: 6rem;
-	min-height: 450px;
+	min-height: 500px;
 }
 
 .feature__image,
